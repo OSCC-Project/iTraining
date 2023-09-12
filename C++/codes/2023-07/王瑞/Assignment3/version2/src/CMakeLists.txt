@@ -1,0 +1,1 @@
+add_library(MyAstar astar.cpp point.cpp testmap.cpp)

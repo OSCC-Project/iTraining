@@ -1,0 +1,10 @@
+# 忽略上传.exe文件
+*.exe
+# 忽略.vscode文件
+.vscode
+
+*.json
+
+*.zip
+*.7z
+*.rar
