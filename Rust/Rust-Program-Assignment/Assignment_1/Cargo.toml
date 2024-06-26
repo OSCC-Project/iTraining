@@ -1,0 +1,8 @@
+[workspace]
+members = ["avl", "bfs", "dfs"]
+
+default-members = [
+  "avl"
+]
+
+
