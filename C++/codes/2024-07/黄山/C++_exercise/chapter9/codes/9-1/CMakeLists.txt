@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10)
+project(9-1)
+
+include_directories(include)
+
+file(GLOB SRC_FILES src/*.cpp)
+
+add_executable(exercise_9_1 ${SRC_FILES})
+
+set_target_properties(exercise_9_1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${BINARY_OUTPUT_PATH})
