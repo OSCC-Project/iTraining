@@ -1,26 +1,27 @@
 #pragma once
 
 class Move{
-private:
-    double x;
-    double y;
 public:
-    Move(double a=0, double b=0){
-        this->x = a;
-        this->y = b;
+    Move(double x=0, double y=0){
+        m_x = x;
+        m_y = y;
     }
 
     void showmove() const{
-        std::cout << "x: " << this->x << " y: " << this->y << std::endl;
+        std::cout << "x: " << m_x << " y: " << m_y << std::endl;
     }
 
-    Move add(const Move& m) const{
-        Move tempmove(this->x+m.x, this->y+m.y);
+    Move add(const Move& other) const{
+        Move tempmove(m_x+other.m_x, m_y+other.m_y);
         return tempmove;
     }
 
-    void reset(double a=0, double b =0){
-        this->x = a;
-        this->y = b;
+    void reset(double x=0, double y=0){
+        m_x = x;
+        m_y = y;
     }
+
+private:
+    double m_x;
+    double m_y;
 };

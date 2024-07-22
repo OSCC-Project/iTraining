@@ -1,7 +1,5 @@
 #include<iostream>
 
-using namespace std;
-
 double add(double x, double y){
     return x + y;
 }
@@ -18,16 +16,16 @@ int main(int argc, char **argv){
     double x, y;
     while (true)
     {
-        std::cout << "请输入两个数字（用空格分隔）: ";
+        std::cout << "Please enter two numbers (separated by Spaces): ";
         if(!(cin>>x>>y)){
-            cout << "输入格式错误，退出" << endl;
+            std::cout << "The input format is incorrect. Exit." << std::endl;
             break;
         }
 
         double sum = calculate(x, y, add);
         double product = calculate(x, y, multiply);
-        cout << x << "+" << y << "=" << sum << endl;
-        cout << x << "*" << y << "=" << product << endl;
+        std::cout << x << "+" << y << "=" << sum << std::endl;
+        std::cout << x << "*" << y << "=" << product << std::endl;
     }
     return 0;
 }

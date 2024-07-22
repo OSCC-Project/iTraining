@@ -1,6 +1,5 @@
 #include<iostream>
 #include<cstring>
-using namespace std;
 
 struct stringy
 {
@@ -23,13 +22,13 @@ void set(stringy& to_string, char* from_string){
 
 void show(stringy &string, int count=1){
     for (int i = 0; i < count;++i){
-        cout << string.str << endl;
+        std::cout << string.str << std::endl;
     }
 }
 
 void show(char *string, int count=1){
     for (int i = 0; i < count;++i){
-        cout << string << endl;
+        std::cout << string << std::endl;
     }
 }
 

@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string.h>
-using namespace std;
 
 template<typename T>
 T maxn(T *nums, int counts){
@@ -33,8 +32,8 @@ int main(int argc, char** argv){
     double max_double = maxn(double_arrays, 4);
     char *max_string = maxn(string_arrays, 5);
 
-    cout << "max int: " << max_int << endl;
-    cout << "max_double: " << max_double << endl;
-    cout << "max_string: " << max_string << endl;
+    std::cout << "max int: " << max_int << std::endl;
+    std::cout << "max_double: " << max_double << std::endl;
+    std::cout << "max_string: " << max_string << std::endl;
     return 0;
 }

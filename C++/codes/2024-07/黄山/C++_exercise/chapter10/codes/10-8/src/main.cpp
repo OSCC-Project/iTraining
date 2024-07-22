@@ -4,11 +4,11 @@ struct move{
     double x, y;
 };
 
-void showint(int& num){
+void showInt(int& num){
     std::cout<<"num: "<<num<<std::endl;
 }
 
-void showmove(move& m){
+void showMove(move& m){
     std::cout<<"x: "<<m.x<<" y:"<<m.y<<std::endl;
 }
 
@@ -29,7 +29,7 @@ int main(int argc, char** argv){
     if(int_list.isFull()){
         std::cout<<"the list is full"<<std::endl;
     }
-    int_list.visit(showint);
+    int_list.visit(showInt);
 
     //own type list test
     move m1 = {3, 4};
@@ -37,7 +37,7 @@ int main(int argc, char** argv){
     List<move> move_list(4);
     move_list.append(m1);
     move_list.append(m2);
-    move_list.visit(showmove);
+    move_list.visit(showMove);
     
     return 0;
 }
