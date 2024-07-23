@@ -1,0 +1,30 @@
+Start testing: Jul 23 03:46 CST
+----------------------------------------------------------
+1/1 Testing: runTests
+1/1 Test: runTests
+Command: "/home/zjs/modern-cpp-template/build/test/runTests"
+Directory: /home/zjs/modern-cpp-template/build/test
+"runTests" start time: Jul 23 03:46 CST
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from ASTAR
+[ RUN      ] ASTAR.Assertions
+[       OK ] ASTAR.Assertions (0 ms)
+[ RUN      ] ASTAR.Assertions2
+[       OK ] ASTAR.Assertions2 (0 ms)
+[----------] 2 tests from ASTAR (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"runTests" end time: Jul 23 03:46 CST
+"runTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 23 03:46 CST
