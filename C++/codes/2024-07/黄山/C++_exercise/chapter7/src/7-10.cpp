@@ -17,7 +17,7 @@ int main(int argc, char **argv){
     while (true)
     {
         std::cout << "Please enter two numbers (separated by Spaces): ";
-        if(!(cin>>x>>y)){
+        if(!(std::cin>>x>>y)){
             std::cout << "The input format is incorrect. Exit." << std::endl;
             break;
         }

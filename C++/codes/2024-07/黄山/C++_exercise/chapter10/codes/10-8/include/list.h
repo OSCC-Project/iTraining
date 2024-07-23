@@ -5,55 +5,55 @@
 template<typename T>
 class List{
 public:
-    List(int n=0);
+    // List(int n=0);
 
-    bool isEmpty();
+    // bool isEmpty();
 
-    bool isFull();
+    // bool isFull();
 
-    void append(T val);
+    // void append(T val);
 
-    void visit(void(*pf)(T&));
+    // void visit(void(*pf)(T&));
 
-    // List(int n){
-    //     HEAD = new Item;
-    //     TAIL = HEAD;
-    //     size = 0;
-    //     capacity = n;
-    //     std::cout<<"list init completion"<<std::endl;
-    // }
+    List(int n){
+        HEAD = new Item;
+        TAIL = HEAD;
+        size = 0;
+        capacity = n;
+        std::cout<<"list init completion"<<std::endl;
+    }
 
-    // bool isEmpty(){
-    //     if(size == 0) return true;
-    //     else return false;
-    // }
+    bool isEmpty(){
+        if(size == 0) return true;
+        else return false;
+    }
 
-    // bool isFull(){
-    //     if(size == capacity) return true;
-    //     else return false;
-    // }
+    bool isFull(){
+        if(size == capacity) return true;
+        else return false;
+    }
 
-    // void append(T val){
-    //     if(isFull()){
-    //         std::cout << "Can't append, this list is full." << std::endl;
-    //         return;
-    //     }
-    //     Item* temp = new Item;
-    //     temp->value = val;
-    //     temp->next = nullptr;
-    //     TAIL->next = temp;
-    //     TAIL = temp;
-    //     size++;
-    //     std::cout<<"append completion"<<std::endl;
-    // }
+    void append(T val){
+        if(isFull()){
+            std::cout << "Can't append, this list is full." << std::endl;
+            return;
+        }
+        Item* temp = new Item;
+        temp->value = val;
+        temp->next = nullptr;
+        TAIL->next = temp;
+        TAIL = temp;
+        size++;
+        std::cout<<"append completion"<<std::endl;
+    }
 
-    // void visit(void(*pf)(T& )){
-    //     Item* temp = HEAD;
-    //     while(temp->next != nullptr){
-    //         pf(temp->next->value);
-    //         temp = temp->next;
-    //     }
-    // }
+    void visit(void(*pf)(T& )){
+        Item* temp = HEAD;
+        while(temp->next != nullptr){
+            pf(temp->next->value);
+            temp = temp->next;
+        }
+    }
 private:
     struct Item
     {
