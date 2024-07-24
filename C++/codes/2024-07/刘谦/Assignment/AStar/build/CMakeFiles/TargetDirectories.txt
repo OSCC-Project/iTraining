@@ -1,0 +1,6 @@
+/home/liuqian/桌面/AStar/build/CMakeFiles/AStar.dir
+/home/liuqian/桌面/AStar/build/CMakeFiles/edit_cache.dir
+/home/liuqian/桌面/AStar/build/CMakeFiles/rebuild_cache.dir
+/home/liuqian/桌面/AStar/build/src/CMakeFiles/Astar.dir
+/home/liuqian/桌面/AStar/build/src/CMakeFiles/edit_cache.dir
+/home/liuqian/桌面/AStar/build/src/CMakeFiles/rebuild_cache.dir
