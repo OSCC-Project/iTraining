@@ -7,7 +7,7 @@ A* 算法是一种广泛应用于图搜索和路径规划的启发式搜索算�
 
 # 2.算法流程
 ![My Local Image](./resources/AStar算法流程图.png)
- 图1 算法流程图
+
 # 3.数据结构设计
 - AStarAlgorithm：定义A* 算法的寻路函数
 - GridMap：定义地图所需的函数
@@ -66,13 +66,11 @@ MapVisualizer运用SFML将结果可视化,该类有以下输入：
 
 ## Google Test
 使用 Google Test来测试通路，死路，路径，节点，运行结果如下：
-
+```
 [==========] Running 2 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 2 tests from AStarTest
 [ RUN      ] AStarTest.FindsPath
-Start point: (4, 4)
-Goal point: (9, 5)
 [       OK ] AStarTest.FindsPath (2 ms)
 [ RUN      ] AStarTest.NoPath
 [       OK ] AStarTest.NoPath (1 ms)
@@ -81,7 +79,7 @@ Goal point: (9, 5)
 [----------] Global test environment tear-down
 [==========] 2 tests from 1 test suite ran. (4 ms total)
 [  PASSED  ] 2 tests.
-
+```
 ## 算法测试
 
 - 正常带权重结果为：
@@ -90,4 +88,4 @@ Goal point: (9, 5)
 
 - 死路结果为:
 
-![My Local Image](./resources/deaend.png)
+![My Local Image](./resources/deadend.png)
