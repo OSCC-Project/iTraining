@@ -1,7 +1,0 @@
-<map id="Map::showPath" name="Map::showPath">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,125,56"/>
-<area shape="rect" id="Node000002" href="$classMap.html#a118e0c5115d9162450534e6e925eeebb" title=" " alt="" coords="173,5,296,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,32,159,27,160,32,126,37"/>
-<area shape="rect" id="Node000003" href="$classMap.html#ab3181204ba96eb15b96ee1ced85e198e" title=" " alt="" coords="176,55,293,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,49,162,54,162,60,125,54"/>
-</map>

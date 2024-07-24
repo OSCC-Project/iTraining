@@ -14,87 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-AStarProjectTests_BINARY_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template/build/test
-
-//Value Computed by CMake
-AStarProjectTests_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-AStarProjectTests_SOURCE_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template/test
-
-//Value Computed by CMake
-AStarProject_BINARY_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template/build
-
-//Build the project as an executable, rather than a library.
-AStarProject_BUILD_EXECUTABLE:BOOL=OFF
-
-//Build the project as a header-only library.
-AStarProject_BUILD_HEADERS_ONLY:BOOL=OFF
-
-//Path to a program.
-AStarProject_CLANG_FORMAT_BINARY:FILEPATH=AStarProject_CLANG_FORMAT_BINARY-NOTFOUND
-
-//Enable Address Sanitize to detect memory error.
-AStarProject_ENABLE_ASAN:BOOL=OFF
-
-//Enable the usage of Ccache, in order to speed up rebuild times.
-AStarProject_ENABLE_CCACHE:BOOL=ON
-
-//Enable static analysis with Clang-Tidy.
-AStarProject_ENABLE_CLANG_TIDY:BOOL=OFF
-
-//Enable code coverage through GCC.
-AStarProject_ENABLE_CODE_COVERAGE:BOOL=OFF
-
-//Enable the Conan package manager for this project.
-AStarProject_ENABLE_CONAN:BOOL=OFF
-
-//Enable static analysis with Cppcheck.
-AStarProject_ENABLE_CPPCHECK:BOOL=OFF
-
-//Enable Doxygen documentation builds of source.
-AStarProject_ENABLE_DOXYGEN:BOOL=1
-
-//Enable Interprocedural Optimization, aka Link Time Optimization
-// (LTO).
-AStarProject_ENABLE_LTO:BOOL=OFF
-
-//Enable unit tests for the projects (from the `test` subfolder).
-AStarProject_ENABLE_UNIT_TESTING:BOOL=ON
-
-//Enable the Vcpkg package manager for this project.
-AStarProject_ENABLE_VCPKG:BOOL=OFF
-
-//Create a `project_export.h` file containing all exported symbols.
-AStarProject_GENERATE_EXPORT_HEADER:BOOL=OFF
-
-//Value Computed by CMake
-AStarProject_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-AStarProject_SOURCE_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template
-
-//Use alternative names for the project, such as naming the include
-// directory all lowercase.
-AStarProject_USE_ALT_NAMES:BOOL=ON
-
-//Use the Catch2 project for creating unit tests.
-AStarProject_USE_CATCH2:BOOL=OFF
-
-//Use the GoogleMock project for extending the unit tests.
-AStarProject_USE_GOOGLE_MOCK:BOOL=OFF
-
-//Use the GoogleTest project for creating unit tests.
-AStarProject_USE_GTEST:BOOL=ON
-
-//Enable verbose output, allowing for a better understanding of
-// each step taken.
-AStarProject_VERBOSE_OUTPUT:BOOL=ON
-
-//Treat compiler warnings as errors.
-AStarProject_WARNINGS_AS_ERRORS:BOOL=OFF
-
 //Path to a program.
 CCACHE_FOUND:FILEPATH=CCACHE_FOUND-NOTFOUND
 
@@ -200,7 +119,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/absolute/path/to/custom/install/directory
+CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -256,7 +175,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=AStarProject
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -338,14 +257,89 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Dot tool for use with Doxygen
-DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/bin/dot
-
-//Doxygen documentation generation tool (https://www.doxygen.nl)
-DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
-
 //The directory containing a CMake configuration file for GTest.
 GTest_DIR:PATH=/usr/local/lib/cmake/GTest
+
+//Value Computed by CMake
+ProjectTests_BINARY_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template/build/test
+
+//Value Computed by CMake
+ProjectTests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ProjectTests_SOURCE_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template/test
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template/build
+
+//Build the project as an executable, rather than a library.
+Project_BUILD_EXECUTABLE:BOOL=OFF
+
+//Build the project as a header-only library.
+Project_BUILD_HEADERS_ONLY:BOOL=OFF
+
+//Path to a program.
+Project_CLANG_FORMAT_BINARY:FILEPATH=Project_CLANG_FORMAT_BINARY-NOTFOUND
+
+//Enable Address Sanitize to detect memory error.
+Project_ENABLE_ASAN:BOOL=OFF
+
+//Enable the usage of Ccache, in order to speed up rebuild times.
+Project_ENABLE_CCACHE:BOOL=ON
+
+//Enable static analysis with Clang-Tidy.
+Project_ENABLE_CLANG_TIDY:BOOL=OFF
+
+//Enable code coverage through GCC.
+Project_ENABLE_CODE_COVERAGE:BOOL=OFF
+
+//Enable the Conan package manager for this project.
+Project_ENABLE_CONAN:BOOL=OFF
+
+//Enable static analysis with Cppcheck.
+Project_ENABLE_CPPCHECK:BOOL=OFF
+
+//Enable Doxygen documentation builds of source.
+Project_ENABLE_DOXYGEN:BOOL=OFF
+
+//Enable Interprocedural Optimization, aka Link Time Optimization
+// (LTO).
+Project_ENABLE_LTO:BOOL=OFF
+
+//Enable unit tests for the projects (from the `test` subfolder).
+Project_ENABLE_UNIT_TESTING:BOOL=ON
+
+//Enable the Vcpkg package manager for this project.
+Project_ENABLE_VCPKG:BOOL=OFF
+
+//Create a `project_export.h` file containing all exported symbols.
+Project_GENERATE_EXPORT_HEADER:BOOL=OFF
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/sujianrong/PCL_code/modern-cpp-template
+
+//Use alternative names for the project, such as naming the include
+// directory all lowercase.
+Project_USE_ALT_NAMES:BOOL=ON
+
+//Use the Catch2 project for creating unit tests.
+Project_USE_CATCH2:BOOL=OFF
+
+//Use the GoogleMock project for extending the unit tests.
+Project_USE_GOOGLE_MOCK:BOOL=OFF
+
+//Use the GoogleTest project for creating unit tests.
+Project_USE_GTEST:BOOL=ON
+
+//Enable verbose output, allowing for a better understanding of
+// each step taken.
+Project_VERBOSE_OUTPUT:BOOL=ON
+
+//Treat compiler warnings as errors.
+Project_WARNINGS_AS_ERRORS:BOOL=OFF
 
 
 ########################
@@ -513,16 +507,10 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
-DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_EXECUTABLE
-DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
-//Details about finding Doxygen
-FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen dot ][v1.9.8()]
 //Details about finding GTest
 FIND_PACKAGE_MESSAGE_DETAILS_GTest:INTERNAL=[/usr/local/lib/cmake/GTest/GTestConfig.cmake][c ][v1.14.0()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/absolute/path/to/custom/install/directory
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 

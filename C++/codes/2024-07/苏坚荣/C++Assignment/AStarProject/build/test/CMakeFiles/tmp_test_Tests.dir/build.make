@@ -92,7 +92,7 @@ tmp_test_Tests_EXTERNAL_OBJECTS =
 
 test/tmp_test_Tests: test/CMakeFiles/tmp_test_Tests.dir/src/tmp_test.cpp.o
 test/tmp_test_Tests: test/CMakeFiles/tmp_test_Tests.dir/build.make
-test/tmp_test_Tests: lib/Debug/libAStarProject.a
+test/tmp_test_Tests: lib/Debug/libProject.a
 test/tmp_test_Tests: /usr/local/lib/libgtest_main.a
 test/tmp_test_Tests: /usr/local/lib/libgtest.a
 test/tmp_test_Tests: test/CMakeFiles/tmp_test_Tests.dir/link.txt

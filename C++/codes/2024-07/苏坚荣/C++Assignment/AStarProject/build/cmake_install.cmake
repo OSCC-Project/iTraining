@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/absolute/path/to/custom/install/directory")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,19 +43,19 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/lib/Debug/libAStarProject.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/lib/Debug/libProject.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject/AStarProjectTargets.cmake")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Project/ProjectTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject/AStarProjectTargets.cmake"
-         "/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Export/38f7bb41a503ac9969d628e721a857f6/AStarProjectTargets.cmake")
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Project/ProjectTargets.cmake"
+         "/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Export/a50376a65e97f7aaf17835f07c6239f4/ProjectTargets.cmake")
     if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject/AStarProjectTargets-*.cmake")
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Project/ProjectTargets-*.cmake")
       if(_cmake_old_config_files)
         string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject/AStarProjectTargets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Project/ProjectTargets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
         unset(_cmake_old_config_files_text)
         file(REMOVE ${_cmake_old_config_files})
       endif()
@@ -63,24 +63,24 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject" TYPE FILE FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Export/38f7bb41a503ac9969d628e721a857f6/AStarProjectTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Project" TYPE FILE FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Export/a50376a65e97f7aaf17835f07c6239f4/ProjectTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject" TYPE FILE FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Export/38f7bb41a503ac9969d628e721a857f6/AStarProjectTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Project" TYPE FILE FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Export/a50376a65e97f7aaf17835f07c6239f4/ProjectTargets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/astarproject" TYPE FILE FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/include/astarproject/version.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/project" TYPE FILE FILES "/home/sujianrong/PCL_code/modern-cpp-template/build/include/project/version.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/sujianrong/PCL_code/modern-cpp-template/include/astarproject")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/sujianrong/PCL_code/modern-cpp-template/include/project")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/AStarProject" TYPE FILE FILES
-    "/home/sujianrong/PCL_code/modern-cpp-template/build/AStarProjectConfig.cmake"
-    "/home/sujianrong/PCL_code/modern-cpp-template/build/AStarProjectConfigVersion.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Project" TYPE FILE FILES
+    "/home/sujianrong/PCL_code/modern-cpp-template/build/ProjectConfig.cmake"
+    "/home/sujianrong/PCL_code/modern-cpp-template/build/ProjectConfigVersion.cmake"
     )
 endif()
 

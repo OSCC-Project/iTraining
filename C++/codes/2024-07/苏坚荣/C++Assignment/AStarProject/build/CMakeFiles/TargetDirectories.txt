@@ -1,5 +1,4 @@
-/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/AStarProject.dir
-/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/doxygen-docs.dir
+/home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/Project.dir
 /home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/test.dir
 /home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/edit_cache.dir
 /home/sujianrong/PCL_code/modern-cpp-template/build/CMakeFiles/rebuild_cache.dir

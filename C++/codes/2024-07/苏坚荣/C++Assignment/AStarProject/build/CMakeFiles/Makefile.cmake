@@ -8,14 +8,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/sujianrong/PCL_code/modern-cpp-template/CMakeLists.txt"
-  "CMakeDoxyfile.in"
-  "CMakeDoxygenDefaults.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/sujianrong/PCL_code/modern-cpp-template/cmake/AStarProjectConfig.cmake.in"
   "/home/sujianrong/PCL_code/modern-cpp-template/cmake/CompilerWarnings.cmake"
   "/home/sujianrong/PCL_code/modern-cpp-template/cmake/Conan.cmake"
   "/home/sujianrong/PCL_code/modern-cpp-template/cmake/Doxygen.cmake"
+  "/home/sujianrong/PCL_code/modern-cpp-template/cmake/ProjectConfig.cmake.in"
   "/home/sujianrong/PCL_code/modern-cpp-template/cmake/SourcesAndHeaders.cmake"
   "/home/sujianrong/PCL_code/modern-cpp-template/cmake/StandardSettings.cmake"
   "/home/sujianrong/PCL_code/modern-cpp-template/cmake/StaticAnalyzers.cmake"
@@ -43,7 +41,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
-  "/usr/share/cmake-3.28/Modules/FindDoxygen.cmake"
   "/usr/share/cmake-3.28/Modules/FindGTest.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
@@ -67,17 +64,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "Doxyfile.doxygen-docs"
-  "include/astarproject/version.hpp"
-  "AStarProjectConfigVersion.cmake"
-  "AStarProjectConfig.cmake"
+  "include/project/version.hpp"
+  "ProjectConfigVersion.cmake"
+  "ProjectConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/AStarProject.dir/DependInfo.cmake"
-  "CMakeFiles/doxygen-docs.dir/DependInfo.cmake"
+  "CMakeFiles/Project.dir/DependInfo.cmake"
   "test/CMakeFiles/tmp_test_Tests.dir/DependInfo.cmake"
   )

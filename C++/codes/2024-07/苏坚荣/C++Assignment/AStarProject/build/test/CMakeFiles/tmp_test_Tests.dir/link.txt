@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/tmp_test_Tests.dir/src/tmp_test.cpp.o -o tmp_test_Tests  ../lib/Debug/libAStarProject.a /usr/local/lib/libgtest_main.a /usr/local/lib/libgtest.a 
+/usr/bin/g++ -g CMakeFiles/tmp_test_Tests.dir/src/tmp_test.cpp.o -o tmp_test_Tests  ../lib/Debug/libProject.a /usr/local/lib/libgtest_main.a /usr/local/lib/libgtest.a 

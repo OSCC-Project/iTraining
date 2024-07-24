@@ -172,30 +172,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AStarProject
+# Target rules for targets named Project
 
 # Build rule for target.
-AStarProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AStarProject
-.PHONY : AStarProject
+Project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project
+.PHONY : Project
 
 # fast build rule for target.
-AStarProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/build
-.PHONY : AStarProject/fast
-
-#=============================================================================
-# Target rules for targets named doxygen-docs
-
-# Build rule for target.
-doxygen-docs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doxygen-docs
-.PHONY : doxygen-docs
-
-# fast build rule for target.
-doxygen-docs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doxygen-docs.dir/build.make CMakeFiles/doxygen-docs.dir/build
-.PHONY : doxygen-docs/fast
+Project/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/build
+.PHONY : Project/fast
 
 #=============================================================================
 # Target rules for targets named tmp_test_Tests
@@ -215,7 +202,7 @@ src/AStar.o: src/AStar.cpp.o
 
 # target to build an object file
 src/AStar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/AStar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/AStar.cpp.o
 .PHONY : src/AStar.cpp.o
 
 src/AStar.i: src/AStar.cpp.i
@@ -223,7 +210,7 @@ src/AStar.i: src/AStar.cpp.i
 
 # target to preprocess a source file
 src/AStar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/AStar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/AStar.cpp.i
 .PHONY : src/AStar.cpp.i
 
 src/AStar.s: src/AStar.cpp.s
@@ -231,7 +218,7 @@ src/AStar.s: src/AStar.cpp.s
 
 # target to generate assembly for a file
 src/AStar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/AStar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/AStar.cpp.s
 .PHONY : src/AStar.cpp.s
 
 src/Map.o: src/Map.cpp.o
@@ -239,7 +226,7 @@ src/Map.o: src/Map.cpp.o
 
 # target to build an object file
 src/Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/Map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Map.cpp.o
 .PHONY : src/Map.cpp.o
 
 src/Map.i: src/Map.cpp.i
@@ -247,7 +234,7 @@ src/Map.i: src/Map.cpp.i
 
 # target to preprocess a source file
 src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Map.cpp.i
 .PHONY : src/Map.cpp.i
 
 src/Map.s: src/Map.cpp.s
@@ -255,7 +242,7 @@ src/Map.s: src/Map.cpp.s
 
 # target to generate assembly for a file
 src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Map.cpp.s
 .PHONY : src/Map.cpp.s
 
 src/Node.o: src/Node.cpp.o
@@ -263,7 +250,7 @@ src/Node.o: src/Node.cpp.o
 
 # target to build an object file
 src/Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/Node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Node.cpp.o
 .PHONY : src/Node.cpp.o
 
 src/Node.i: src/Node.cpp.i
@@ -271,7 +258,7 @@ src/Node.i: src/Node.cpp.i
 
 # target to preprocess a source file
 src/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/Node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Node.cpp.i
 .PHONY : src/Node.cpp.i
 
 src/Node.s: src/Node.cpp.s
@@ -279,7 +266,7 @@ src/Node.s: src/Node.cpp.s
 
 # target to generate assembly for a file
 src/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AStarProject.dir/build.make CMakeFiles/AStarProject.dir/src/Node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Node.cpp.s
 .PHONY : src/Node.cpp.s
 
 # Help Target
@@ -295,8 +282,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... doxygen-docs"
-	@echo "... AStarProject"
+	@echo "... Project"
 	@echo "... tmp_test_Tests"
 	@echo "... src/AStar.o"
 	@echo "... src/AStar.i"

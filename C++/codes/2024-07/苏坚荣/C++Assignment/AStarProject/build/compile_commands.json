@@ -1,21 +1,21 @@
 [
 {
   "directory": "/home/sujianrong/PCL_code/modern-cpp-template/build",
-  "command": "/usr/bin/g++  -I/home/sujianrong/PCL_code/modern-cpp-template/include -I/home/sujianrong/PCL_code/modern-cpp-template/src -g -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -o CMakeFiles/AStarProject.dir/src/AStar.cpp.o -c /home/sujianrong/PCL_code/modern-cpp-template/src/AStar.cpp",
+  "command": "/usr/bin/g++  -I/home/sujianrong/PCL_code/modern-cpp-template/include -I/home/sujianrong/PCL_code/modern-cpp-template/src -g -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -o CMakeFiles/Project.dir/src/AStar.cpp.o -c /home/sujianrong/PCL_code/modern-cpp-template/src/AStar.cpp",
   "file": "/home/sujianrong/PCL_code/modern-cpp-template/src/AStar.cpp",
-  "output": "CMakeFiles/AStarProject.dir/src/AStar.cpp.o"
+  "output": "CMakeFiles/Project.dir/src/AStar.cpp.o"
 },
 {
   "directory": "/home/sujianrong/PCL_code/modern-cpp-template/build",
-  "command": "/usr/bin/g++  -I/home/sujianrong/PCL_code/modern-cpp-template/include -I/home/sujianrong/PCL_code/modern-cpp-template/src -g -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -o CMakeFiles/AStarProject.dir/src/Map.cpp.o -c /home/sujianrong/PCL_code/modern-cpp-template/src/Map.cpp",
+  "command": "/usr/bin/g++  -I/home/sujianrong/PCL_code/modern-cpp-template/include -I/home/sujianrong/PCL_code/modern-cpp-template/src -g -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -o CMakeFiles/Project.dir/src/Map.cpp.o -c /home/sujianrong/PCL_code/modern-cpp-template/src/Map.cpp",
   "file": "/home/sujianrong/PCL_code/modern-cpp-template/src/Map.cpp",
-  "output": "CMakeFiles/AStarProject.dir/src/Map.cpp.o"
+  "output": "CMakeFiles/Project.dir/src/Map.cpp.o"
 },
 {
   "directory": "/home/sujianrong/PCL_code/modern-cpp-template/build",
-  "command": "/usr/bin/g++  -I/home/sujianrong/PCL_code/modern-cpp-template/include -I/home/sujianrong/PCL_code/modern-cpp-template/src -g -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -o CMakeFiles/AStarProject.dir/src/Node.cpp.o -c /home/sujianrong/PCL_code/modern-cpp-template/src/Node.cpp",
+  "command": "/usr/bin/g++  -I/home/sujianrong/PCL_code/modern-cpp-template/include -I/home/sujianrong/PCL_code/modern-cpp-template/src -g -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -o CMakeFiles/Project.dir/src/Node.cpp.o -c /home/sujianrong/PCL_code/modern-cpp-template/src/Node.cpp",
   "file": "/home/sujianrong/PCL_code/modern-cpp-template/src/Node.cpp",
-  "output": "CMakeFiles/AStarProject.dir/src/Node.cpp.o"
+  "output": "CMakeFiles/Project.dir/src/Node.cpp.o"
 },
 {
   "directory": "/home/sujianrong/PCL_code/modern-cpp-template/build/test",
