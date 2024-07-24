@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240723-1013-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.28.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="sujianrong-VMware-Virtual-Platform"
+	OSRelease="6.8.0-36-generic"
+	OSVersion="#36-Ubuntu SMP PREEMPT_DYNAMIC Mon Jun 10 10:49:14 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="96"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="3759"
+	TotalPhysicalMemory="3868"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="1796.62"
+	>
+	<Testing>
+		<StartDateTime>Jul 23 20:59 CST</StartDateTime>
+		<StartTestTime>1721739545</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jul 23 20:59 CST</EndDateTime>
+		<EndTestTime>1721739545</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

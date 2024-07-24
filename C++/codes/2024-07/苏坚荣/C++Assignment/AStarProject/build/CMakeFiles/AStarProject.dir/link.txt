@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/Debug/libAStarProject.a CMakeFiles/AStarProject.dir/src/AStar.cpp.o CMakeFiles/AStarProject.dir/src/Map.cpp.o CMakeFiles/AStarProject.dir/src/Node.cpp.o
+/usr/bin/ranlib lib/Debug/libAStarProject.a
