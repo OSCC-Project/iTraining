@@ -1,0 +1,59 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp 文件参考}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+这是主函数文件  
+
+
+{\ttfamily \#include \char`\"{}public\+\_\+header.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Graph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Visual.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Astar.\+h\char`\"{}}\newline
+main.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+这是主函数文件 
+
+\begin{DoxyAuthor}{作者}
+赵正杰 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+0.\+1
+\end{DoxyVersion}
+这里简单实现了一个\+A$\ast$算法的路径搜索，并用可视化工具\+Visualization来展示搜索过程。 
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+这里为了方便起见我直接写了缺省值为4和8，但是实际上可以画任意大的图
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14            \{}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_graph}{Graph}} graph;}
+\DoxyCodeLine{16     \textcolor{comment}{//graph.set\_Weight();}}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_visualization}{Visualization}} vis(\&graph);}
+\DoxyCodeLine{18     }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \mbox{\hyperlink{class_astar}{Astar}} A;}
+\DoxyCodeLine{21     A.\mbox{\hyperlink{class_astar_afe507b640071834359ce0c025aca8426}{search\_Path}}(\{ 0,0 \}, \{2,6\},graph);}
+\DoxyCodeLine{22     A.\mbox{\hyperlink{class_astar_ac190af4597ddbec5cf918c7411955888}{get\_Path}}(\{ 2,6 \}, \{ 0,0 \}, graph, \&vis);}
+\DoxyCodeLine{23     vis.Put\_Visual();}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}

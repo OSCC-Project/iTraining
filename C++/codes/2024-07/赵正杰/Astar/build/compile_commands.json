@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/build",
+  "command": "/usr/bin/c++ -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/include -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Visualization -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Algorithm -g -std=gnu++11 -o src/CMakeFiles/Astar_bin.dir/main.cpp.o -c /home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/main.cpp",
+  "file": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/main.cpp"
+},
+{
+  "directory": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/build",
+  "command": "/usr/bin/c++ -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/include -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph -g -std=gnu++11 -o src/Graph/CMakeFiles/Graph.dir/Graph.cpp.o -c /home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph/Graph.cpp",
+  "file": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph/Graph.cpp"
+},
+{
+  "directory": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/build",
+  "command": "/usr/bin/c++ -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/include -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Visualization -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph -g -std=gnu++11 -o src/Visualization/CMakeFiles/Vis.dir/Visual.cpp.o -c /home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Visualization/Visual.cpp",
+  "file": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Visualization/Visual.cpp"
+},
+{
+  "directory": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/build",
+  "command": "/usr/bin/c++ -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/include -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Algorithm -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Visualization -g -std=gnu++11 -o src/Algorithm/CMakeFiles/Astar.dir/Astar.cpp.o -c /home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Algorithm/Astar.cpp",
+  "file": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Algorithm/Astar.cpp"
+},
+{
+  "directory": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/build",
+  "command": "/usr/bin/c++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/include -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Algorithm -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Graph -I/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/src/Visualization -isystem /home/mrlris/anaconda3/include -g -std=gnu++11 -o test/CMakeFiles/test_moduel.dir/test_case.cpp.o -c /home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/test/test_case.cpp",
+  "file": "/home/mrlris/iTraining/C++/codes/2024-07/赵正杰/Astar/test/test_case.cpp"
+}
+]

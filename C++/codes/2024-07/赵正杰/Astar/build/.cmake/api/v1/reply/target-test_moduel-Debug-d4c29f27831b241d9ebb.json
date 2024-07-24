@@ -1,0 +1,211 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/mrlris/iTraining/C++/codes/2024-07/\u8d75\u6b63\u6770/Astar/bin/test_moduel"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"test/CMakeLists.txt",
+			"src/Algorithm/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 3
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 6
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "GTEST_LINKED_AS_SHARED_LIBRARY=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/mrlris/iTraining/C++/codes/2024-07/\u8d75\u6b63\u6770/Astar/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/mrlris/iTraining/C++/codes/2024-07/\u8d75\u6b63\u6770/Astar/src/Algorithm"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/mrlris/iTraining/C++/codes/2024-07/\u8d75\u6b63\u6770/Astar/src/Graph"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/mrlris/iTraining/C++/codes/2024-07/\u8d75\u6b63\u6770/Astar/src/Visualization"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/mrlris/anaconda3/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Graph::@5a131f48f3c76ee5b034"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Vis::@b90041ffefb763ec7663"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Astar::@7573b1d61c405ecbcad2"
+		}
+	],
+	"id" : "test_moduel::@36f028580bb02cc8272a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/mrlris/anaconda3/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/Algorithm/libAstar.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/mrlris/anaconda3/lib/libgtest.so.1.11.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/Visualization/libVis.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "src/Graph/libGraph.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "test_moduel",
+	"nameOnDisk" : "test_moduel",
+	"paths" : 
+	{
+		"build" : "test",
+		"source" : "test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/test_case.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

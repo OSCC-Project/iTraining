@@ -1,0 +1,141 @@
+\hypertarget{test__case_8cpp}{}\doxysection{test/test\+\_\+case.cpp 文件参考}
+\label{test__case_8cpp}\index{test/test\_case.cpp@{test/test\_case.cpp}}
+
+
+这个文件是测试 \mbox{\hyperlink{class_astar}{Astar}} 类的单元测试模块示例  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}/home/mrlris/i\+Training/\+C++/codes/2024-\/07/赵正杰/\+Astar/src/\+Algorithm/\+Astar.\+h\char`\"{}}\newline
+test\+\_\+case.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__case_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test__case_8cpp_a0c3b879df9792c8109031d1afa0b8d51}{TEST}} (Astar\+Test, Find\+Neighbors\+Correct\+Size)
+\begin{DoxyCompactList}\small\item\em 当前模块是测试 \mbox{\hyperlink{class_astar}{Astar}} 类的单元测试模块示例 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test__case_8cpp_aa1f7dc0ff55f02a946adb7f72e5c5014}{TEST}} (Astar\+Test, Find\+Neighbors\+Correct\+Size2)
+\item 
+\mbox{\Hypertarget{test__case_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{test__case_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+这个文件是测试 \mbox{\hyperlink{class_astar}{Astar}} 类的单元测试模块示例 
+
+主要是对是否能够正确找到邻居节点进行测试 
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{test__case_8cpp_a0c3b879df9792c8109031d1afa0b8d51}\label{test__case_8cpp_a0c3b879df9792c8109031d1afa0b8d51}} 
+\index{test\_case.cpp@{test\_case.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_case.cpp@{test\_case.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Astar\+Test}]{,  }\item[{Find\+Neighbors\+Correct\+Size}]{ }\end{DoxyParamCaption})}
+
+
+
+当前模块是测试 \mbox{\hyperlink{class_astar}{Astar}} 类的单元测试模块示例 
+
+测试 Find\+\_\+neighbors 函数是否能正确找到邻居节点 创建一个 5x5 的图
+
+创建 \mbox{\hyperlink{class_astar}{Astar}} 类的一个实例
+
+测试 current 在左上角 (0,0)
+
+测试 current 在右上角 (4,0)
+
+测试 current 在左下角 (0,4)
+
+测试 current 在右下角 (4,4)
+
+测试 current 在非边界点 (2,2)
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                           \{}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_graph}{Graph}} graph(5, 5); }
+\DoxyCodeLine{15     \mbox{\hyperlink{class_astar}{Astar}} astar;       }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18     Point current1(0, 0);}
+\DoxyCodeLine{19     std::vector<Point> neighbors1 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current1, graph);}
+\DoxyCodeLine{20     EXPECT\_NE(neighbors1.size(), 4);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23     Point current2(graph.get\_Width() -\/ 1, 0);}
+\DoxyCodeLine{24     std::vector<Point> neighbors2 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current2, graph);}
+\DoxyCodeLine{25     EXPECT\_NE(neighbors2.size(), 4);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{28     Point current3(0, graph.get\_length() -\/ 1);}
+\DoxyCodeLine{29     std::vector<Point> neighbors3 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current3, graph);}
+\DoxyCodeLine{30     EXPECT\_NE(neighbors3.size(), 4);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33     Point current4(graph.get\_Width() -\/ 1, graph.get\_length() -\/ 1);}
+\DoxyCodeLine{34     std::vector<Point> neighbors4 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current4, graph);}
+\DoxyCodeLine{35     EXPECT\_NE(neighbors4.size(), 4);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     Point current5(2, 2);}
+\DoxyCodeLine{39     std::vector<Point> neighbors5 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current5, graph);}
+\DoxyCodeLine{40     \textcolor{keywordflow}{if} (current5.first == 0 || current5.first == graph.get\_Width() -\/ 1 || }
+\DoxyCodeLine{41         current5.second == 0 || current5.second == graph.get\_length() -\/ 1) \{}
+\DoxyCodeLine{42         EXPECT\_NE(neighbors5.size(), 4);}
+\DoxyCodeLine{43     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{44         EXPECT\_EQ(neighbors5.size(), 4);}
+\DoxyCodeLine{45     \}}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__case_8cpp_aa1f7dc0ff55f02a946adb7f72e5c5014}\label{test__case_8cpp_aa1f7dc0ff55f02a946adb7f72e5c5014}} 
+\index{test\_case.cpp@{test\_case.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_case.cpp@{test\_case.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Astar\+Test}]{,  }\item[{Find\+Neighbors\+Correct\+Size2}]{ }\end{DoxyParamCaption})}
+
+创建一个 5x5 的图
+
+创建 \mbox{\hyperlink{class_astar}{Astar}} 类的一个实例
+
+测试 current 在左上角 (0,0)
+
+测试 current 在右上角 (4,0)
+
+测试 current 在左下角 (0,4)
+
+测试 current 在右下角 (4,4)
+
+测试 current 在非边界点 (2,2)
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                            \{}
+\DoxyCodeLine{49     \mbox{\hyperlink{class_graph}{Graph}} graph(5, 5); }
+\DoxyCodeLine{50     \mbox{\hyperlink{class_astar}{Astar}} astar;       }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{53     Point current1(0, 0);}
+\DoxyCodeLine{54     std::vector<Point> neighbors1 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current1, graph);}
+\DoxyCodeLine{55     EXPECT\_NE(neighbors1.size(), 4);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{58     Point current2(graph.get\_Width() -\/ 1, 0);}
+\DoxyCodeLine{59     std::vector<Point> neighbors2 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current2, graph);}
+\DoxyCodeLine{60     EXPECT\_NE(neighbors2.size(), 4);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{63     Point current3(0, graph.get\_length() -\/ 1);}
+\DoxyCodeLine{64     std::vector<Point> neighbors3 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current3, graph);}
+\DoxyCodeLine{65     EXPECT\_EQ(neighbors3.size(), 4);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{68     Point current4(graph.get\_Width() -\/ 1, graph.get\_length() -\/ 1);}
+\DoxyCodeLine{69     std::vector<Point> neighbors4 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current4, graph);}
+\DoxyCodeLine{70     EXPECT\_NE(neighbors4.size(), 4);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{73     Point current5(2, 2);}
+\DoxyCodeLine{74     std::vector<Point> neighbors5 = astar.\mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current5, graph);}
+\DoxyCodeLine{75     \textcolor{keywordflow}{if} (current5.first == 0 || current5.first == graph.get\_Width() -\/ 1 || }
+\DoxyCodeLine{76         current5.second == 0 || current5.second == graph.get\_length() -\/ 1) \{}
+\DoxyCodeLine{77         EXPECT\_NE(neighbors5.size(), 4);}
+\DoxyCodeLine{78     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{79         EXPECT\_EQ(neighbors5.size(), 4);}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}

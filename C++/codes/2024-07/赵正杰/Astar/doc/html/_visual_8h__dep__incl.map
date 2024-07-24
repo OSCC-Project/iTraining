@@ -1,0 +1,6 @@
+<map id="src/Visualization/Visual.h" name="src/Visualization/Visual.h">
+<area shape="rect" id="node1" title="这个文件定义了可视化类Visualization" alt="" coords="24,5,209,32"/>
+<area shape="rect" id="node2" href="$_astar_8h.html" title="这个文件是A*算法的实现文件，主要实现了A*算法的搜索路径和得到路径的算法" alt="" coords="96,80,255,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="这是主函数文件" alt="" coords="5,155,111,181"/>
+<area shape="rect" id="node4" href="$test__case_8cpp.html" title="这个文件是测试 Astar 类的单元测试模块示例" alt="" coords="135,155,275,181"/>
+</map>
