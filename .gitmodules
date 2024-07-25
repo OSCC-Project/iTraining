@@ -1,0 +1,3 @@
+[submodule "C++/codes/2024-07/宋彬彬/MyAStar/external/googletest"]
+	path = C++/codes/2024-07/宋彬彬/MyAStar/external/googletest
+	url = https://github.com/google/googletest.git
