@@ -1,0 +1,20 @@
+2024-07-25 20:05:46.439 [info] Extension host with pid 149681 started
+2024-07-25 20:05:48.628 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-25 20:05:48.829 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-25 20:05:50.051 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-25 20:05:51.395 [info] Eager extensions activated
+2024-07-25 20:05:51.769 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-25 20:05:51.804 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-25 20:06:21.936 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-25 20:06:22.024 [info] Extension host with pid 149681 exiting with code 0
+2024-07-25 20:06:26.538 [info] Extension host with pid 149778 started
+2024-07-25 20:06:26.538 [info] Skipping acquiring lock for /home/liuqian/iTraining/C++/codes/2024-07/刘谦/Assignment/User/workspaceStorage/0770c0c437b20d23a65170d5577fa2d5.
+2024-07-25 20:06:26.937 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-07-25 20:06:27.149 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-25 20:06:27.345 [info] Eager extensions activated
+2024-07-25 20:06:27.370 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-25 20:06:27.375 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-25 20:06:38.305 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2024-07-25 20:07:11.974 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-25 20:11:21.518 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-25 20:11:21.548 [info] Extension host with pid 149778 exiting with code 0

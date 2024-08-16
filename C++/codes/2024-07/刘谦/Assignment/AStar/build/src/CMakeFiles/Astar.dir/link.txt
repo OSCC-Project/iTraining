@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAstar.a CMakeFiles/Astar.dir/GridMap.cpp.o CMakeFiles/Astar.dir/AStarAlgorithm.cpp.o CMakeFiles/Astar.dir/RandomMap.cpp.o CMakeFiles/Astar.dir/MapVisualizer.cpp.o
+/usr/bin/ranlib libAstar.a
