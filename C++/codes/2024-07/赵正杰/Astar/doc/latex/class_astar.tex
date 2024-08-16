@@ -1,0 +1,155 @@
+\hypertarget{class_astar}{}\doxysection{Astar类 参考}
+\label{class_astar}\index{Astar@{Astar}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_astar_afe507b640071834359ce0c025aca8426}{search\+\_\+\+Path}} (const Point start, const Point end, \mbox{\hyperlink{class_graph}{Graph}} \&graph)
+\begin{DoxyCompactList}\small\item\em 这个函数是搜索路径的主函数，主要实现了\+A$\ast$算法的搜索路径算法 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_astar_ac190af4597ddbec5cf918c7411955888}{get\+\_\+\+Path}} (const Point \&end, const Point \&start, \mbox{\hyperlink{class_graph}{Graph}} \&graph, \mbox{\hyperlink{class_visualization}{Visualization}} $\ast$vis=nullptr)
+\begin{DoxyCompactList}\small\item\em 这个函数是得到路径的主函数，主要实现了\+A$\ast$算法的得到路径算法 \end{DoxyCompactList}\item 
+std\+::vector$<$ Point $>$ \mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\+\_\+neighbors}} (const Point current, \mbox{\hyperlink{class_graph}{Graph}} \&graph)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}\label{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}} 
+\index{Astar@{Astar}!Find\_neighbors@{Find\_neighbors}}
+\index{Find\_neighbors@{Find\_neighbors}!Astar@{Astar}}
+\doxysubsubsection{\texorpdfstring{Find\_neighbors()}{Find\_neighbors()}}
+{\footnotesize\ttfamily std\+::vector$<$ Astar\+::\+Point $>$ Astar\+::\+Find\+\_\+neighbors (\begin{DoxyParamCaption}\item[{const Point}]{current,  }\item[{\mbox{\hyperlink{class_graph}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em current} & 当前节点 \\
+\hline
+{\em graph} & 图结构 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+邻居节点的集合 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                             \{}
+\DoxyCodeLine{59     std::vector<Point> vc\_neighbors;}
+\DoxyCodeLine{60     \textcolor{keywordflow}{if} (current.first != 0) \{}
+\DoxyCodeLine{61         vc\_neighbors.push\_back(\{ current.first -\/ 1, current.second \});}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63     \textcolor{keywordflow}{if} (current.first != graph.\mbox{\hyperlink{class_graph_a6c62f8262283b6ec0c3815b5a08fcacb}{get\_Width}}() -\/ 1) \{}
+\DoxyCodeLine{64         vc\_neighbors.push\_back(\{ current.first + 1, current.second \});}
+\DoxyCodeLine{65     \}}
+\DoxyCodeLine{66     \textcolor{keywordflow}{if} (current.second != 0) \{}
+\DoxyCodeLine{67         vc\_neighbors.push\_back(\{ current.first, current.second -\/ 1 \});}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69     \textcolor{keywordflow}{if} (current.second != graph.\mbox{\hyperlink{class_graph_ab42c764f0ee5178472ec419c14b6ce1a}{get\_length}}() -\/ 1) \{}
+\DoxyCodeLine{70         vc\_neighbors.push\_back(\{ current.first, current.second + 1 \});}
+\DoxyCodeLine{71     \}}
+\DoxyCodeLine{72     \textcolor{keywordflow}{return} vc\_neighbors;}
+\DoxyCodeLine{73 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_astar_ac190af4597ddbec5cf918c7411955888}\label{class_astar_ac190af4597ddbec5cf918c7411955888}} 
+\index{Astar@{Astar}!get\_Path@{get\_Path}}
+\index{get\_Path@{get\_Path}!Astar@{Astar}}
+\doxysubsubsection{\texorpdfstring{get\_Path()}{get\_Path()}}
+{\footnotesize\ttfamily void Astar\+::get\+\_\+\+Path (\begin{DoxyParamCaption}\item[{const Point \&}]{end,  }\item[{const Point \&}]{start,  }\item[{\mbox{\hyperlink{class_graph}{Graph}} \&}]{graph,  }\item[{\mbox{\hyperlink{class_visualization}{Visualization}} $\ast$}]{vis = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+这个函数是得到路径的主函数，主要实现了\+A$\ast$算法的得到路径算法 
+
+@parma end 终点坐标 
+\begin{DoxyParams}{参数}
+{\em start} & 起点坐标 \\
+\hline
+{\em graph} & 图结构 \\
+\hline
+{\em vis} & 可视化类 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                                                            \{}
+\DoxyCodeLine{39     assert(!come\_from.empty());}
+\DoxyCodeLine{40     Point current\_Node = end;}
+\DoxyCodeLine{41     graph.\_Adj\_Graph[end.first][end.second] = 0;}
+\DoxyCodeLine{42     \textcolor{keywordflow}{while} (current\_Node != start) \{}
+\DoxyCodeLine{43         \textcolor{keywordflow}{if} (vis) \{}
+\DoxyCodeLine{44             vis-\/>\mbox{\hyperlink{class_visualization_a0154b6066108f6e9f66ab4889d53fd20}{Put\_Visual}}();}
+\DoxyCodeLine{45             std::this\_thread::sleep\_for(std::chrono::milliseconds(1000));}
+\DoxyCodeLine{46             system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{keyword}{auto} history\_Node = std::find\_if(come\_from.begin(), come\_from.end(),}
+\DoxyCodeLine{50             [current\_Node](std::pair<Point, Point> Node) \{}
+\DoxyCodeLine{51                 return Node.first == current\_Node;}
+\DoxyCodeLine{52             \});}
+\DoxyCodeLine{53         current\_Node = history\_Node-\/>second;}
+\DoxyCodeLine{54         graph.\_Adj\_Graph[current\_Node.first][current\_Node.second] = 0;}
+\DoxyCodeLine{55     \}}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_astar_afe507b640071834359ce0c025aca8426}\label{class_astar_afe507b640071834359ce0c025aca8426}} 
+\index{Astar@{Astar}!search\_Path@{search\_Path}}
+\index{search\_Path@{search\_Path}!Astar@{Astar}}
+\doxysubsubsection{\texorpdfstring{search\_Path()}{search\_Path()}}
+{\footnotesize\ttfamily void Astar\+::search\+\_\+\+Path (\begin{DoxyParamCaption}\item[{const Point}]{start,  }\item[{const Point}]{end,  }\item[{\mbox{\hyperlink{class_graph}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+这个函数是搜索路径的主函数，主要实现了\+A$\ast$算法的搜索路径算法 
+
+
+\begin{DoxyParams}{参数}
+{\em start} & 起点坐标 \\
+\hline
+{\em end} & 终点坐标 \\
+\hline
+{\em graph} & 图结构 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                                                        \{}
+\DoxyCodeLine{4     PriorityQueue Node\_Queue;}
+\DoxyCodeLine{5     Node\_Queue.emplace(0, start);}
+\DoxyCodeLine{6     std::vector<std::pair<int, Point>> vc\_cost\_so\_far;}
+\DoxyCodeLine{7     vc\_cost\_so\_far.emplace\_back(0, start);}
+\DoxyCodeLine{8     \textcolor{keywordflow}{while} (!Node\_Queue.empty()) \{}
+\DoxyCodeLine{9         \textcolor{keyword}{auto} current\_node = Node\_Queue.top().second;}
+\DoxyCodeLine{10         Node\_Queue.pop();}
+\DoxyCodeLine{11         \textcolor{keywordflow}{if} (current\_node == end) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{12         \textcolor{keyword}{auto} neighbors = \mbox{\hyperlink{class_astar_ae6b74c37cb6a5b721479f0a3913da5d5}{Find\_neighbors}}(current\_node, graph);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{keyword}{auto} current\_cost = std::find\_if(vc\_cost\_so\_far.begin(), vc\_cost\_so\_far.end(),}
+\DoxyCodeLine{15             [current\_node](\textcolor{keyword}{const} Priority\_Point\& Node) \{}
+\DoxyCodeLine{16                 return current\_node == Node.second;}
+\DoxyCodeLine{17             \})-\/>first;}
+\DoxyCodeLine{18         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} next : neighbors) \{}
+\DoxyCodeLine{19             \textcolor{keyword}{auto} new\_cost = current\_cost + graph.\mbox{\hyperlink{class_graph_ae80916321c8d39f576f484d4580d42dc}{get\_Weight}}(next.first, next.second);}
+\DoxyCodeLine{20             \textcolor{keyword}{auto} is\_exit\_next = std::find\_if(vc\_cost\_so\_far.begin(), vc\_cost\_so\_far.end(),}
+\DoxyCodeLine{21                 [next](\textcolor{keyword}{const} Priority\_Point\& Node) \{}
+\DoxyCodeLine{22                     return next == Node.second;}
+\DoxyCodeLine{23                 \});}
+\DoxyCodeLine{24             \textcolor{keywordflow}{if} (is\_exit\_next == vc\_cost\_so\_far.end() || new\_cost < is\_exit\_next-\/>first) \{}
+\DoxyCodeLine{25                 \textcolor{keywordflow}{if} (is\_exit\_next == vc\_cost\_so\_far.end()) \{}
+\DoxyCodeLine{26                     vc\_cost\_so\_far.emplace\_back(new\_cost, next);}
+\DoxyCodeLine{27                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{28                     is\_exit\_next-\/>first = new\_cost;}
+\DoxyCodeLine{29                 \}}
+\DoxyCodeLine{30                 \textcolor{keywordtype}{int} priority = new\_cost + heuristic(next, end);}
+\DoxyCodeLine{31                 Node\_Queue.emplace(priority, next);}
+\DoxyCodeLine{32                 come\_from.push\_back(\{ next, current\_node \});}
+\DoxyCodeLine{33             \}}
+\DoxyCodeLine{34         \}}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Algorithm/\mbox{\hyperlink{_astar_8h}{Astar.\+h}}\item 
+src/\+Algorithm/Astar.\+cpp\end{DoxyCompactItemize}
