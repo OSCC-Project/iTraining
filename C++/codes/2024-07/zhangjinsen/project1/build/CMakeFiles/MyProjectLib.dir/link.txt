@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar qc libMyProjectLib.a CMakeFiles/MyProjectLib.dir/src/main.cpp.o
+/usr/bin/llvm-ranlib libMyProjectLib.a

@@ -1,0 +1,10 @@
+/home/zjs/modern-cpp-template/build/CMakeFiles/MyProjectLib.dir
+/home/zjs/modern-cpp-template/build/CMakeFiles/MyProject.dir
+/home/zjs/modern-cpp-template/build/CMakeFiles/doc_doxygen.dir
+/home/zjs/modern-cpp-template/build/CMakeFiles/test.dir
+/home/zjs/modern-cpp-template/build/CMakeFiles/edit_cache.dir
+/home/zjs/modern-cpp-template/build/CMakeFiles/rebuild_cache.dir
+/home/zjs/modern-cpp-template/build/test/CMakeFiles/runTests.dir
+/home/zjs/modern-cpp-template/build/test/CMakeFiles/test.dir
+/home/zjs/modern-cpp-template/build/test/CMakeFiles/edit_cache.dir
+/home/zjs/modern-cpp-template/build/test/CMakeFiles/rebuild_cache.dir
