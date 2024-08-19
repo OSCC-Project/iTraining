@@ -188,11 +188,11 @@ void Tetris::pickAndSortMovableInstList(std::vector<ipl::LGInstance*>& movable_i
 
 ##### Abacus：
 
-![](C:\Users\25054\Desktop\备份\images\Abacus运行结果.png)
+![](images/Abacus运行结果.png)
 
 ##### Tetris：
 
-![](C:\Users\25054\Desktop\备份\images\Tetris运行结果.png)
+![](images/Tetris运行结果.png)
 
 ##### 不同算法关键参数指标对比
 
