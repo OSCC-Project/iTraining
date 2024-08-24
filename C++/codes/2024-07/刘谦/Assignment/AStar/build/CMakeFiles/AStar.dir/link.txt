@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/AStar.dir/test.cpp.o -o AStar  src/libAstar.a -Wl,-Bstatic -lgtest -lgtest_main -Wl,-Bdynamic -lpthread /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1 

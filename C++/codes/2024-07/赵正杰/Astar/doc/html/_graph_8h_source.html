@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/Graph/Graph.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Astar</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7d6a65ce1b9dd88d61878b6298542596.html">Graph</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Graph.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graph_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;public_header.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_astar.html">Astar</a>; <span class="comment">// 前向声明</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_graph.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graph.html">Graph</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_graph.html#acb8e31474828952fda021670915c241e">   24</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_astar.html">Astar</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_graph.html#a248685ef493e4b31c2deb32133c65b31">Graph</a>(<span class="keywordtype">int</span> w = 4, <span class="keywordtype">int</span> h = 8);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_graph.html#a9ea6548695b42daf291b1e927f24e1fc">set_Weight</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#a6c62f8262283b6ec0c3815b5a08fcacb">get_Width</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#ab42c764f0ee5178472ec419c14b6ce1a">get_length</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#ae80916321c8d39f576f484d4580d42dc">get_Weight</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="class_graph.html">Graph</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> _width;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> _length;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::vector&lt;std::vector&lt;int&gt;&gt; _Adj_Graph;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="ttc" id="aclass_astar_html"><div class="ttname"><a href="class_astar.html">Astar</a></div><div class="ttdef"><b>Definition:</b> Astar.h:11</div></div>
+<div class="ttc" id="aclass_graph_html"><div class="ttname"><a href="class_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> Graph.h:18</div></div>
+<div class="ttc" id="aclass_graph_html_a248685ef493e4b31c2deb32133c65b31"><div class="ttname"><a href="class_graph.html#a248685ef493e4b31c2deb32133c65b31">Graph::Graph</a></div><div class="ttdeci">Graph(int w=4, int h=8)</div><div class="ttdoc">这个构造函数初始化图的宽和高</div><div class="ttdef"><b>Definition:</b> Graph.cpp:3</div></div>
+<div class="ttc" id="aclass_graph_html_a6c62f8262283b6ec0c3815b5a08fcacb"><div class="ttname"><a href="class_graph.html#a6c62f8262283b6ec0c3815b5a08fcacb">Graph::get_Width</a></div><div class="ttdeci">int get_Width()</div><div class="ttdoc">Get the Width object</div><div class="ttdef"><b>Definition:</b> Graph.cpp:14</div></div>
+<div class="ttc" id="aclass_graph_html_a9ea6548695b42daf291b1e927f24e1fc"><div class="ttname"><a href="class_graph.html#a9ea6548695b42daf291b1e927f24e1fc">Graph::set_Weight</a></div><div class="ttdeci">void set_Weight()</div><div class="ttdoc">Set the Weight object</div><div class="ttdef"><b>Definition:</b> Graph.cpp:5</div></div>
+<div class="ttc" id="aclass_graph_html_ab42c764f0ee5178472ec419c14b6ce1a"><div class="ttname"><a href="class_graph.html#ab42c764f0ee5178472ec419c14b6ce1a">Graph::get_length</a></div><div class="ttdeci">int get_length()</div><div class="ttdoc">Get the length object</div><div class="ttdef"><b>Definition:</b> Graph.cpp:18</div></div>
+<div class="ttc" id="aclass_graph_html_ae80916321c8d39f576f484d4580d42dc"><div class="ttname"><a href="class_graph.html#ae80916321c8d39f576f484d4580d42dc">Graph::get_Weight</a></div><div class="ttdeci">int get_Weight(int x, int y)</div><div class="ttdoc">Get the Weight object</div><div class="ttdef"><b>Definition:</b> Graph.cpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -18,4 +18,4 @@ void TestMap::set_TestMap(const int rows, const int cols,
   _testmap[rows - 1][cols - 1] = 0;
   _testmap[0][0] = 0;
 }
-} // namespace mytestmap
+} // namespace mytestmap	

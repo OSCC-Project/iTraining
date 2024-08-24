@@ -1,0 +1,99 @@
+\hypertarget{class_graph}{}\doxysection{Graph类 参考}
+\label{class_graph}\index{Graph@{Graph}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graph_a248685ef493e4b31c2deb32133c65b31}\label{class_graph_a248685ef493e4b31c2deb32133c65b31}} 
+\mbox{\hyperlink{class_graph_a248685ef493e4b31c2deb32133c65b31}{Graph}} (int w=4, int h=8)
+\begin{DoxyCompactList}\small\item\em 这个构造函数初始化图的宽和高 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a9ea6548695b42daf291b1e927f24e1fc}\label{class_graph_a9ea6548695b42daf291b1e927f24e1fc}} 
+void \mbox{\hyperlink{class_graph_a9ea6548695b42daf291b1e927f24e1fc}{set\+\_\+\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Set the Weight object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_a6c62f8262283b6ec0c3815b5a08fcacb}{get\+\_\+\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Get the Width object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_ab42c764f0ee5178472ec419c14b6ce1a}{get\+\_\+length}} ()
+\begin{DoxyCompactList}\small\item\em Get the length object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_ae80916321c8d39f576f484d4580d42dc}{get\+\_\+\+Weight}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Get the Weight object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graph_acb8e31474828952fda021670915c241e}\label{class_graph_acb8e31474828952fda021670915c241e}} 
+class \mbox{\hyperlink{class_graph_acb8e31474828952fda021670915c241e}{Astar}}
+\begin{DoxyCompactList}\small\item\em 声明了\+Graph类的友元类\+Astar \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_graph_ab42c764f0ee5178472ec419c14b6ce1a}\label{class_graph_ab42c764f0ee5178472ec419c14b6ce1a}} 
+\index{Graph@{Graph}!get\_length@{get\_length}}
+\index{get\_length@{get\_length}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{get\_length()}{get\_length()}}
+{\footnotesize\ttfamily int Graph\+::get\+\_\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the length object 
+
+\begin{DoxyReturn}{返回}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                       \{}
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} \_length;}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_graph_ae80916321c8d39f576f484d4580d42dc}\label{class_graph_ae80916321c8d39f576f484d4580d42dc}} 
+\index{Graph@{Graph}!get\_Weight@{get\_Weight}}
+\index{get\_Weight@{get\_Weight}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{get\_Weight()}{get\_Weight()}}
+{\footnotesize\ttfamily int Graph\+::get\+\_\+\+Weight (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the Weight object 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & 输入的x的坐标 \\
+\hline
+{\em y} & 输入的y的坐标 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int 得到的权重 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                   \{}
+\DoxyCodeLine{23     \textcolor{keywordflow}{return} \_Adj\_Graph[x][y];}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_graph_a6c62f8262283b6ec0c3815b5a08fcacb}\label{class_graph_a6c62f8262283b6ec0c3815b5a08fcacb}} 
+\index{Graph@{Graph}!get\_Width@{get\_Width}}
+\index{get\_Width@{get\_Width}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{get\_Width()}{get\_Width()}}
+{\footnotesize\ttfamily int Graph\+::get\+\_\+\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Width object 
+
+\begin{DoxyReturn}{返回}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                      \{}
+\DoxyCodeLine{15     \textcolor{keywordflow}{return} \_width;}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Graph/\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\item 
+src/\+Graph/Graph.\+cpp\end{DoxyCompactItemize}

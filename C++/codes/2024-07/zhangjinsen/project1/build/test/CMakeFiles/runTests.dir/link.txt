@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/runTests.dir/test_main.cpp.o -o runTests  /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a ../libMyProjectLib.a /usr/local/lib/libgtest.a 
